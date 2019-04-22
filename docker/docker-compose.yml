@@ -1,0 +1,7 @@
+version: '3.0'
+
+services:
+  ours:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile.test

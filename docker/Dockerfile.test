@@ -1,0 +1,9 @@
+FROM python:3.7.3-alpine3.9
+
+COPY . /app
+
+WORKDIR /app
+
+RUN pip install -r test-requirements.txt
+
+CMD python -m pytest
