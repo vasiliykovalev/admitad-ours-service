@@ -19,7 +19,7 @@ class Event(NamedTuple):
 
 
 class OursService:
-    AFFILIATE_HOSTS = ['referal.ours.com', 'ad.theirs1.com', 'ad.theirs2.com']
+    AFFILIATE_HOSTS = {'referal.ours.com', 'ad.theirs1.com', 'ad.theirs2.com'}
     OURS_HOST = 'referal.ours.com'
 
     def __init__(self, log_path: str):
